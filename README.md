@@ -54,7 +54,7 @@ Liste des éléments configurables :
   + host
   + port
   
-___REMARQUE IMOPORTANTE : N'oubliez pas que les fichiers de configuration peuvent contenir des informations privées d'authentification, si c'est le cas ne les mettez pas sur un repository public___
+___REMARQUE IMOPORTANTE : N'oubliez pas que les fichiers de configuration peuvent contenir des informations privées d'authentification, si c'est le cas ne les mettez pas sur un repository public.___ Pour cela n'oubliez pas d'ajouter les fichiers de configuration contenant des données privées dans votre fichier `.gitignore`. 
 En revanche, le fichier `/config/default.yml` doit contenir des valeurs par défaut pour toutes les variables, les valeurs pouvant être juste des exemples invalides, par exemple :
 
 ```
@@ -64,7 +64,7 @@ port: 27017
 user: username
 password: mon_mot_de_passe
 ```
-Ainsi les variables sont définies même si leurs valeurs feront échouer les requêtes.
+Ainsi les variables sont définies même si leurs valeurs feront échouer les requêtes. Le format YAML est le plus intéressant pour les fichiers de configuration car il permet d'ajouter des commentaire avec `#` pour faciliter la configuration mettre un commentaire pour explicité chacune des variables est une bonne pratique. Il n'est ainsi pas nécessaire de fournir une documentation de configuration.
 
 
   
