@@ -37,3 +37,10 @@ _remarque :_ Pensez à utiliser des paramètres de configuration pour accéder �
 
 # Authentification
 L'authentification se fait avec le JWT fourni par le précédent projet. C'est la même authentification que pour la partie CRUD.
+
+# Configuration
+Pour faciliter l'utilisation d'un service il est nécessaire de pouvoir le configurer, pour cela la lib `config` est la plus pratique et répandue, elle gère aussi bien différentes versions de fichier de configuration que le variables d'environnement. L'utilisation des variables d'environnement est très pratique en utilisation conjoite avec _docker_.
+
+Vous pouvez la trouver sur le [repo npm](https://www.npmjs.com/package/config)
+
+Une présentaiton succinte est disponible dans [cette présentation](https://slides.com/benoitchanclou/mean#/9)
