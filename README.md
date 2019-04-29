@@ -23,7 +23,6 @@ git clone // ou // unzip monfichier.zip
 npm install
 npm test
 npm start
-
 ```
 
 # Utilisation de MongoDB
@@ -44,3 +43,28 @@ Pour faciliter l'utilisation d'un service il est nécessaire de pouvoir le confi
 Vous pouvez la trouver sur le [repo npm](https://www.npmjs.com/package/config)
 
 Une présentaiton succinte est disponible dans [cette présentation](https://slides.com/benoitchanclou/mean#/9)
+
+Liste des éléments configurables :
++ accès la la base de données
+  + host
+  + port
+  + identity
+  + password
++ spécification du serveur
+  + host
+  + port
+  
+___REMARQUE IMOPORTANTE : N'oubliez pas que les fichiers de configuration peuvent contenir des informations privées d'authentification, si c'est le cas ne les mettez pas sur un repository public___
+En revanche, le fichier `/config/default.yml` doit contenir des valeurs par défaut pour toutes les variables, les valeurs pouvant être juste des exemples invalides, par exemple :
+
+```
+# accès à la base de données
+host: 127.0.0.1
+port: 27017
+user: username
+password: mon_mot_de_passe
+```
+Ainsi les variables sont définies même si leurs valeurs feront échouer les requêtes.
+
+
+  
