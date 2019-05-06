@@ -25,6 +25,10 @@ npm test
 npm start
 ```
 
+__Remarque :__ n'oubliez pas qu'il me faut un token (jwt) pour interroger l'API, aussi, il faut _au choix_ :
++ fournir un jwt que je pourrais insérer dans mes requêtes de test
++ fournir le service développé dans la première partie afin que je puisse me logger pour récupérer le token
+
 # Utilisation de MongoDB
 
 Différentes Solutions
