@@ -10,8 +10,9 @@ Réaliser un service avec NodeJS et MongoDB offrant une API CRUD.
 + le contrat d'API est celui fourni dans le swagger de ce projet
 
 # Livrable
+## Date limite pour rendre le TP le lundi 20 mai 
 Le livrable sera un zip ou un dépôt git (accessible) il devra contenir
-+ le code 
++ le code des deux TP (Stéphane Michel et moi)
   + le code du serveur
   + les tests
   + les scripts (s'il y en a)
@@ -25,9 +26,7 @@ npm test
 npm start
 ```
 
-__Remarque :__ n'oubliez pas qu'il me faut un token (jwt) pour interroger l'API, aussi, il faut _au choix_ :
-+ fournir un jwt que je pourrais insérer dans mes requêtes de test
-+ fournir le service développé dans la première partie afin que je puisse me logger pour récupérer le token
+__Remarque :__ n'oubliez pas qu'il me faut un token (jwt) pour interroger l'API, aussi, il faut fournir le service développé dans la première partie afin que je puisse me logger pour récupérer le token
 
 # Utilisation de MongoDB
 
@@ -58,7 +57,7 @@ Liste des éléments configurables :
   + host
   + port
   
-___REMARQUE IMOPORTANTE : N'oubliez pas que les fichiers de configuration peuvent contenir des informations privées d'authentification, si c'est le cas ne les mettez pas sur un repository public.___ Pour cela n'oubliez pas d'ajouter les fichiers de configuration contenant des données privées dans votre fichier `.gitignore`. 
+___REMARQUE IMPORTANTE : N'oubliez pas que les fichiers de configuration peuvent contenir des informations privées d'authentification, si c'est le cas ne les mettez pas sur un repository public.___ Pour cela n'oubliez pas d'ajouter les fichiers de configuration contenant des données privées dans votre fichier `.gitignore`. 
 En revanche, le fichier `/config/default.yml` doit contenir des valeurs par défaut pour toutes les variables, les valeurs pouvant être juste des exemples invalides, par exemple :
 
 ```
